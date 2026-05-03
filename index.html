@@ -1,51 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>TechGadget Pro</title>
+    <title>TechGadget Pro - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        section {
+            scroll-margin-top: 70px;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <!-- ESPACIO PARA EL HEADER -->
-    </header>
-    <main>
-        <section class="hero-section text-center">
-            <div class="container">
-                <h1 class="display-3 font-weight-bold mb-4">TechGadget Pro</h1>
-                <p class="lead mb-5"> El dispositivo inteligente que revolucionará tu día a día</p>
-                <a href="#caracteristicas" class="btn btn-lg btn-primary btn-light">Descubre más  →</a>
-                <a href="#caracteristicas" class="btn btn-lg btn-primary btn-outline-light">Ver Planes  →</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechGadget</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-        </section>
-        <section class="caracteristicas">
-            <!-- ESPACIO PARA LAS CARACTERÍSTICAS -->
-        </section>
-        <section class="testimonios">
-            <!-- ESPACIO PARA LOS TESTIMONIOS -->
-        </section>
-        <section class="precios">
-            <!-- ESPACIO PARA LOS PRECIOS -->
-        </section>
-        <section class="formulari">
-            <!-- ESPACIO PARA EL FORMULARIO -->
-        </section>
-    </main>
-    <footer>
-        <!-- ESPACIO PARA EL FOOTER -->
+        </div>
+    </nav>
+
+    <!-- ESPACIO PARA LA PERSONA 2: SECCIÓN HERO[cite: 1] -->
+
+
+    <!-- ESPACIO PARA LA PERSONA 3: CARACTERÍSTICAS (Debe usar id="caracteristicas")[cite: 1] -->
+    <section id="caracteristicas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Características principales</h2>
+
+            <div class="row">
+                <div class="col-md-4 col text-center mb-4">
+                    <h3>🚀</h3>
+                    <p class="fs-5 fw-bold">Ultra rápido</p>
+                    <p>Procesador de última generación para máximo rendimiento</p>
+                </div>
+                <div class="col-md-4 col text-center mb-4">
+                    <h3>🔋</h3>
+                    <p class="fs-5 fw-bold">Batería duradera</p>
+                    <p>Hasta 48 horas de uso continuo sin recargar</p>
+                </div>
+                <div class="col-md-4 col text-center mb-4">
+                    <h3>🛡️</h3>
+                    <p class="fs-5 fw-bold">Seguro</p>
+                    <p>Encriptación de nivel militar para tus datos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPACIO PARA LA PERSONA 4: TABLA DE PRECIOS (Debe usar id="precios")[cite: 1] -->
+
+
+    <!-- ESPACIO PARA LA PERSONA 3: TESTIMONIOS[cite: 1] -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Lo que dicen nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <blockquote class="blockquote">
+                            <p>"El mejor gadget que he comprado. Ha mejorado mi productividad enormemente."</p>
+                            <footer class="blockquote-footer">María García, <cite title="puesto">Desarrolladora</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 p-3 shadow-sm">
+                        <blockquote class="blockquote">
+                            <p>"Increíble relación calidad-precio. Lo recomiendo 100%."</p>
+                            <footer class="blockquote-footer">Carlos López, <cite title="puesto">Diseñador</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ESPACIO PARA LA PERSONA 4: FORMULARIO DE CONTACTO (Debe usar id="contacto")[cite: 1] -->
+
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2026 TechGadget. Todos los derechos reservados.[cite: 1]</p>
+            <div class="social-links">
+                <a href="#" class="text-white me-3 text-decoration-none">Facebook</a>
+                <a href="#" class="text-white me-3 text-decoration-none">Twitter</a>
+                <a href="#" class="text-white text-decoration-none">Instagram</a>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
